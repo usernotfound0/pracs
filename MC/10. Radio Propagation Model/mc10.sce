@@ -75,7 +75,7 @@ fc = 250;
 r = 25;
 lr = 0.2;
 cl = 20;
-ca = 30/100;
+ca = 3/100;
 Ptdbm = 10*log10(Pt*1000);
 disp(Ptdbm)
 Lpf = 32.44+20*log10(r)+20*log10(fc);
