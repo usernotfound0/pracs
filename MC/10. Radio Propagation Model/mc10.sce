@@ -37,7 +37,7 @@ pr = -100;
 lp = PTdbm - pr;
 lo = 30;
 y = 4;
-r = 10^((lp-lo)/40);
+r = 10^((lp-lo)/20);
 disp('Propogation path loss : ')
 disp(lp);
 disp('Radio coverage range: ')
@@ -81,7 +81,7 @@ disp(Ptdbm)
 Lpf = 32.44+20*log10(r)+20*log10(fc);
 disp(Lpf)
 Lt = cl*ca;
-Pr = Ptdbm-lr+gt-Lpf+gr-lr;
+Pr = Ptdbm-lr+gt-Lpf+gr-Lt;
 disp('Power delivered to the receiver: ');
 disp(Pr)
 
